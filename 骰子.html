@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			.box {
+				display: flex;
+				justify-content: space-between;
+				width: 650px;
+				height: 100px;
+				margin: 100px auto;
+				background-color: aqua;
+			}
+			.box>div {
+				padding: 10px;
+				background-color: #ccc;
+				width: 100px;
+				height: 100px;
+				border-radius: 10px;
+				display: flex;
+			}
+			.box>div>div {
+				width: 27px;
+				height: 27px;
+				background-color: black;
+				border-radius: 50%;
+			}
+			.box>div:nth-child(1) {
+				justify-content: center;
+				align-items: center;
+			}
+			.box>div:nth-child(2) {
+				justify-content: space-between;
+			}
+			.box>div:nth-child(2)>div:nth-child(2) {
+				align-self: flex-end;
+			}
+			.box>div:nth-child(3) {
+				justify-content: space-between;
+			}
+			.box>div:nth-child(3)>div:nth-child(2) {
+				align-self: center;
+			}
+			.box>div:nth-child(3)>div:nth-child(3) {
+				align-self: flex-end;
+			}
+			.box>div:nth-child(4)>div>div,.box>div:nth-child(5)>div>div,.box>div:nth-child(6)>div>div {
+				width: 27px;
+				height: 27px;
+				background-color: black;
+				border-radius: 50%;
+			}
+			.box>div:nth-child(4) {
+				justify-content: space-between;
+				flex-wrap: wrap;
+			}
+			.box>div:nth-child(4)>div,.box>div:nth-child(5)>div {
+				width: 100%;
+				display: flex;
+				border-radius: 0;
+				background: none;
+				align-items: flex-end;
+				justify-content: space-between;
+			}
+			.box>div:nth-child(4)>div:nth-child(2) {
+				align-self: flex-end;
+			}
+			.box>div:nth-child(5) {
+				justify-content: space-between;
+				flex-wrap: wrap;
+			}
+			.box>div:nth-child(5)>div:nth-child(2) {
+				justify-content: center;
+			}
+			.box>div:nth-child(6)>div {
+				align-items: space-between;
+			}
+			.box>div:nth-child(6) {
+				justify-content: space-between;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div>
+				<div></div>
+			</div>
+			<div>
+				<div></div>
+				<div></div>
+			</div>
+			<div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div>
+				<div>
+					<div></div>
+					<div></div>
+				</div>
+				<div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+			<div>
+				<div>
+					<div></div>
+					<div></div>
+				</div>
+				<div>
+					<div></div>
+				</div>
+				<div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+			<div>
+				<div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				<div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
